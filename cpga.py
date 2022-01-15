@@ -4,22 +4,22 @@ class student:
     gdict=[]
     gradeob=[]
 
-    ns=int(input())
-    _nm=int(input())
-    _ng=int(input())
+    ns=int(input()) #number of students
+    _nm=int(input()) #number of marks
+    _ng=int(input()) #number of grades
     i=0
     def info(self):
         for i in range(self._ng):
-                     self.fgl=input()
-                     self.fgp=int(input())
+                     self.fgl=input()       #grade letter i.e. S
+                     self.fgp=int(input())       #grade point i.e. 10 for S, 9 for A
                      self.gdict.append(self.fgp)
         for i in range(self.ns):
-                self._regn=input()
+                self._regn=input()       #student's roll no.
         for i in range(self._nm):
-                self.sm=int(input())
+                self.sm=int(input())       #student's marks
                 self.marks.append(self.sm)
         for i in range(self._nm):
-                self.sg=int(input())
+                self.sg=int(input())     # grades per class
                 self.grades.append(self.sg)
     def cgpa(self):
         self.count=0
@@ -55,6 +55,18 @@ for i in range(student.ns):
     
 if __name__=="__main__":
     main()
+    
+    '''the input format that I want  is 
+    number of s
+    number of marks
+    number of grades
+    grade letter
+    grade points...Nth times
+    roll code..nth times
+    marks..Nth times for N students i.e. if 3 students and 5 marks per student then total 15 input
+    grades per class, nth times(number of marks) for n students'''
+    
+    
 
 
     
